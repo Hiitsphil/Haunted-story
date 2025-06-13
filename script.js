@@ -1,13 +1,33 @@
-let playButton= document.querySelector(".goButton");
+let restartButton=document.querySelector(".restart");
+let startScreen=document.querySelector(".openingPage");
+let gameScreen=document.querySelector(".gameplayPage");
+let houseAudio=document.querySelector("#hauntedMusic");
+let optionOne=document.querySelector(".optionOne");
+let contextText=document.querySelector(".optionLore");
+
+playButton= document.querySelector(".goButton");
 playButton.addEventListener("click", function(){
-    var houseAudio=document.querySelector("#hauntedMusic");
     console.log(houseAudio);
     houseAudio.play();
     houseAudio.loop=true;
-    var startScreen=document.querySelector(".openingPage");
-    var gameScreen=document.querySelector(".gameplayPage");
     startScreen.style.display="none";
     gameScreen.style.display="block";
+    restartButton.style.display="block";
 });
 
-let turnAroundButton=document.querySelector("")
+
+restartButton.addEventListener("click",function(){
+    gameScreen.style.display="none";
+    startScreen.style.display="block";
+    houseAudio.play();
+}); 
+
+let turnAroundButton=document.querySelector(".turnAround");
+turnAroundButton.addEventListener("click", function(){
+    window.close();
+});
+
+optionOne.addEventListener("click", function(){
+    contextText.innerHTML="You find your friend unconscious on the ground, but all of a sudden the door behind you slams shut. Do you?";
+    console.log(contextText);
+});
