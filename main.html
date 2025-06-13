@@ -29,21 +29,64 @@
                 </div>
             </div>
         </div>
-        <div class="gameplayPage">
-            <div class="exposition">
-                <h3 class="optionLore">You arrive in the house, there is a room to your right, and a hallway down the middle. Where do you search first?</h3>
-                <div class="optionButtons">
-                    <div class="optionOne">
-                        <button class="optionOneButton">Check Room</button>
-                        <!-- <img class="optionOneImg" src="faintedRoom.png"> -->
-                    </div>
-                    <div class="optionTwo">
-                        <button class="optionTwoButton">Hallway First</button>
-                        <!-- <img class="optionTwoImg" src="hallway.png"> -->
+        <div class="gameplayPageCont">
+            <div class="gameplayPage">
+                <div class="exposition">
+                    <h3 class="optionLore">You arrive in the house, there is a room to your right, and a hallway down the middle. Where do you search first?</h3>
+                    <div class="optionButtonsFirst">
+                        <div class="optionOneFirst">
+                            <button class="optionOneButtonFirst">Check Room</button>
+                            <!-- <img class="optionOneImg" src="faintedRoom.png"> -->
+                        </div>
+                        <div class="optionTwoFirst">
+                            <button class="optionTwoButtonFirst">Hallway First</button>
+                            <!-- <img class="optionTwoImg" src="hallway.png"> -->
+                        </div>
                     </div>
                 </div>
             </div>
-            
+        </div>
+        <div class="gameplayPageTwoCont">
+            <div class="gameplayPageTwo">
+                <div class="exposition">
+                    <h3 class="optionLore">You find your friend unconscious on the ground, but all of a sudden the door behind you slams shut. Do you?</h3>
+                    <div class="optionButtonsSecond">
+                        <div class="optionOneSecond">
+                            <button class="optionOneButtonSecond">Jump out the window w/your friend's body</button>
+                        </div>
+                        <div class="optionTwoSecond">
+                            <button class="optionTwoButtonSecond">Try to Force the door open</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gameplayPageThreeCont">
+            <div class="gameplayPageThree">
+                <div class="exposition">
+                    <h3 class="optionLore">You encounter a beastly monster, it immediately recognizes your presence and begins to chase after you</h3>
+                    <div class="optionButtonsThird">
+                        <div class="optionOneThird">
+                            <button class="optionOneButtonThird">Run back down the hallway and out of the house</button>
+                        </div>
+                        <div class="optionTwoThird">
+                            <button class="optionTwoButtonThird">Hide in a nearby room</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="doorDeath">
+            <h3 class="optionLore">A monster is waiting at the door and kills both of them.</h3>
+        </div>
+        <div class="doubleEscape">
+            <h3 class="optionLore">You and your friend successfully escape, but your friend remembers nothing about the house.</h3>
+        </div>
+        <div class="hallwayDeath">
+            <h3 class="optionLore">You're not fast enough. The monster kills you.</h3>
+        </div>
+        <div class="soloEscape">
+            <h3 class="optionLore">You stay the night and successfully leave the house in the morning, however you are not able to find your friend; only able to assume the worst.</h3>
         </div>
         
     </body>
@@ -51,4 +94,5 @@
     <audio id="monsterSound" src="monsterShriek.mp3.mp3"></audio>
     <audio id="monsterChase" src="monsterChase.mp3.mp3"></audio>
     <audio id="doorSlam" src="doorSlam.mp3.mp3"></audio>
+    <audio id="roomScream" src="roomScream.mp3"></audio>
 </html>

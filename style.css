@@ -122,10 +122,38 @@ body{
 .turnAround h3{
     font-size:25px;
 }
-
+.gameplayPageCont{
+    display:none;
+}
 .gameplayPage{
     display:flex;
     justify-content: center;
+    width:100%;
+}
+
+.gameplayPageTwo{
+    display:flex;
+    justify-content: center;
+}
+
+.gameplayPageThree{
+    display:flex;
+    justify-content: center;
+}
+
+.gameplayPageTwoCont{
+    display:none;
+}
+
+.gameplayPageThreeCont{
+    display:none;
+}
+
+.hallwayDeath{
+    display:none;
+}
+
+.soloEscape{
     display:none;
 }
 
@@ -133,14 +161,24 @@ body{
     background:radial-gradient( 
         rgba(255, 0, 0, .7),
         rgba(0, 0, 0, .3)
-        );
-         display:flex; 
-        align-items:center;
-        flex-direction: column;
-        margin:20px;
-        border-radius: 20px;
-        height:100vh;
+    );
+     display:flex; 
+    align-items:center;
+    flex-direction: column;
+    margin:20px;
+    border-radius: 20px;
+    height:94vh;
+    width:100%;
+
 }
+.doorDeath{
+    display:none;
+}
+.doubleEscape{
+    display:none;
+}
+
+
 
 .optionLore{
     background:black;
@@ -153,22 +191,22 @@ body{
     margin-top:15px;
 }
 
-.optionButtons{
+.optionButtonsFirst, .optionButtonsSecond, .optionButtonsThird{
     display:flex;
     flex-direction:row; 
     gap:50px;
     margin:20px;
-    justify-content: space-between  ;
+    justify-content: space-between ;
 }
-.optionOne{
+.optionOneFirst, .optionOneSecond, .optionOneThird{
     border:solid;
     background-image:url(faintedRoom.png);
     width:100%;
     display:flex;
     justify-content: center;
     align-items: center;
-    height:70vh;
-    width:25vw;
+    height:50vh;
+    width:15vw;
      background-repeat: no-repeat;
     background-size:cover;
     background-position:center;
@@ -176,33 +214,36 @@ body{
     transition:transform .3s ease;
 }
 
-.optionOne:hover{
+.optionOneFirst:hover, .optionOneSecond:hover, .optionOneThird:hover{
     transform:scale(1.05);
     cursor:pointer;
 }
-.optionOneButton{
+.optionOneButtonFirst, .optionOneButtonSecond, .optionOneButtonThird{
     background:rgba(197, 46, 46, 0.3);
     color:white;    
     border:white solid 5px;
     border-radius:5px;
-    font-size:50px;
+    font-size:30px;
     padding:10px;
     transition:transform .3s ease;
 }
 
-.optionOneButton:hover{
-    scale:1.10;
+.optionOneButtonFirst:hover, .optionOneButtonSecond:hover, .optionOneButtonThird:hover{
+    /* scale:1.10; */
+    /* scale:1.10; */
     cursor: pointer;
     transform:scale(1.05);
+    background:rgba(231, 54, 54, 0.3);
 }
 
-.optionTwoButton:hover{
-    scale:1.10;
+.optionTwoButtonFirst:hover, .optionTwoButtonSecond:hover, .optionTwoButtonThird:hover{
+    /* scale:1.10; */
     cursor: pointer;
     transform:scale(1.05);
+    background:rgba(231, 54, 54, 0.3);
 }
 
-.optionTwo{
+.optionTwoFirst, .optionTwoSecond, .optionTwoThird{
     border:solid;
     background-image:url(hallway.png);
     width:100%;
@@ -212,23 +253,23 @@ body{
     background-repeat: no-repeat;
     background-size:cover;
     background-position:center;
-    height:70vh;
-    width:25vw;
+    height:50vh;
+    width:15vw;
     border-radius:10px; 
     transition:transform .3s ease;
 }
 
-.optionTwoButton{
+.optionTwoButtonFirst, .optionTwoButtonSecond, .optionTwoButtonThird{
     background:rgba(197, 46, 46, 0.3);
     color:white;    
     border:white solid 5px;
     border-radius:5px;
-    font-size:50px; 
+    font-size:30px; 
     padding:10px;
      transition:transform .3s ease;
 }
 
-.optionTwo:hover{
+.optionTwoFirst:hover, .optionTwoSecond:hover, .optionTwoThird:hover{
     transform:scale(1.05);
     cursor:pointer;
 }
